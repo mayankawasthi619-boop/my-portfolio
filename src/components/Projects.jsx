@@ -17,7 +17,7 @@ const projectsData = [
     demo: '#'
   },
   {
-    title: 'End-to-End E-Commerce Sales Analysis',
+    title: 'End-to-End E-Commerce Sales Analysis (2026)',
     description: 'Developed an automated data cleaning pipeline and calculated Month-over-Month growth and repeat-buyer cohort analysis using advanced SQL. Delivered an interactive Power BI dashboard tracking KPIs.',
     tech: ['Python', 'PostgreSQL', 'Pandas', 'Power BI', 'Seaborn'],
     features: [
@@ -43,7 +43,7 @@ const projectsData = [
     demo: '#'
   },
   {
-    title: 'Customer Segmentation using RFM Analysis',
+    title: 'Customer Segmentation using RFM Analysis & K-Means Clustering (2026)',
     description: 'Built a rule-based RFM scoring model and implemented unsupervised Machine Learning via Scikit-Learn K-Means algorithm to discover hidden behavioural shopping personas across 500k+ records.',
     tech: ['Python', 'Scikit-Learn', 'NumPy', 'Plotly', 'Matplotlib'],
     features: [
