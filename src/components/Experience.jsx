@@ -37,7 +37,7 @@ const Experience = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="tech-card"
-            style={styles.card}
+            style={{...styles.card, marginBottom: '2rem'}}
           >
             <div style={styles.date}>Jan 2018 – Jul 2018</div>
             <h3 style={styles.role}>Software Developer Intern</h3>
@@ -53,6 +53,28 @@ const Experience = () => {
               <span className="tag">MySQL 5.5</span>
               <span className="tag">RBAC</span>
               <span className="tag">Web Dev</span>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="tech-card"
+            style={styles.card}
+          >
+            <div style={styles.date}>2015–2019</div>
+            <h3 style={styles.role}>Event Management Volunteer</h3>
+            <h4 style={styles.company}>City Montessori School, Lucknow</h4>
+            
+            <p style={styles.description}>
+              Volunteered across 4 large-scale international events (16th & 20th Chief Justices Conferences; 9th & 10th Children's Film Festivals) — managing delegate registration, check-in logistics, and event-day operations.
+            </p>
+            
+            <div style={styles.techStack}>
+              <span className="tag">Event Management</span>
+              <span className="tag">Logistics</span>
             </div>
           </motion.div>
         </div>
