@@ -4,24 +4,24 @@ import { Code, Database, Server, Settings } from 'lucide-react';
 
 const skillsData = [
   {
-    category: 'Languages',
+    category: 'Programming & DB',
     icon: <Code size={30} color="var(--accent-color)" />,
-    skills: ['PHP', 'C++', 'Java (Core + Adv)', 'C#', 'JavaScript', 'Python']
+    skills: ['Java 17', 'Python', 'SQL / PostgreSQL', 'JavaScript', 'PHP', 'C++']
   },
   {
-    category: 'Frameworks/Tools',
+    category: 'Web Dev & Frameworks',
     icon: <Server size={30} color="var(--accent-color)" />,
-    skills: ['React', 'Spring Boot', 'Spring MVC', 'Spring Security', 'Spring Data', '.NET', 'Bootstrap', 'Microservices', 'JDBC', 'Servlets', 'JSP']
+    skills: ['Spring Boot 3', 'Spring Security', 'Hibernate', 'React.js', 'REST APIs', 'Microservices', 'Bootstrap 5']
   },
   {
-    category: 'Databases',
+    category: 'Data & Machine Learning',
     icon: <Database size={30} color="var(--accent-color)" />,
-    skills: ['MySQL', 'MongoDB']
+    skills: ['Pandas', 'NumPy', 'Scikit-Learn', 'Matplotlib/Seaborn', 'Plotly', 'K-Means', 'EDA']
   },
   {
-    category: 'DevOps & Analytics',
+    category: 'Tools & DevOps',
     icon: <Settings size={30} color="var(--accent-color)" />,
-    skills: ['Git', 'GitHub', 'Git Bash', 'Docker', 'Kubernetes', 'MS Excel', 'Power BI']
+    skills: ['Power BI', 'Tableau', 'Docker', 'Kubernetes', 'Git/GitHub', 'Jupyter', 'Agile/Scrum']
   }
 ];
 

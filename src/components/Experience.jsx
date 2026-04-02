@@ -14,22 +14,45 @@ const Experience = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="tech-card"
+            style={{...styles.card, marginBottom: '2rem'}}
+          >
+            <div style={styles.date}>2017–2020 & 2023–2025</div>
+            <h3 style={styles.role}>Private Academic Tutor</h3>
+            <h4 style={styles.company}>Self-Employed, Lucknow</h4>
+            
+            <p style={styles.description}>
+              Delivered personalised tutoring sessions to 20+ students; managed scheduling and tracked academic progress. 
+              Independently upskilled in data analytics and software engineering.
+            </p>
+            
+            <div style={styles.techStack}>
+              <span className="tag">Mentorship</span>
+              <span className="tag">Communication</span>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="tech-card"
             style={styles.card}
           >
             <div style={styles.date}>Jan 2018 – Jul 2018</div>
-            <h3 style={styles.role}>Intern Trainee Software Developer</h3>
-            <h4 style={styles.company}>e-Soft Technologies, Lucknow</h4>
+            <h3 style={styles.role}>Software Developer Intern</h3>
+            <h4 style={styles.company}>e-Soft Technologies Ltd., Lucknow</h4>
             
             <p style={styles.description}>
               Developed the Online Clinical Trial Application and Management System. 
-              Worked extensively on backend architecture and database modeling.
+              Implemented RBAC and secure login module with zero unauthorized access incidents.
             </p>
             
             <div style={styles.techStack}>
               <span className="tag">PHP 5.3</span>
               <span className="tag">MySQL 5.5</span>
-              <span className="tag">Frontend</span>
-              <span className="tag">Backend</span>
+              <span className="tag">RBAC</span>
+              <span className="tag">Web Dev</span>
             </div>
           </motion.div>
         </div>

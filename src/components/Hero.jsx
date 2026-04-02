@@ -13,12 +13,12 @@ const Hero = () => {
           style={styles.content}
         >
           <p style={styles.greeting}>Hi, I am</p>
-          <h1 style={styles.name}>Mayank Awasthi</h1>
-          <h2 style={styles.title}>Full Stack Developer | Java & Spring Boot Specialist</h2>
+          <h1 style={styles.name} className="text-gradient">Mayank Awasthi</h1>
+          <h2 style={styles.title}>Full-Stack Developer | Data & Business Analyst</h2>
           
           <p style={styles.tagline}>
-            Engineering robust web applications, optimizing backend architectures, 
-            and delivering secure, scalable solutions.
+            Engineering robust scalable web applications and delivering data-driven business insights 
+            through advanced analytics, machine learning, and comprehensive dashboards.
           </p>
           
           <div style={styles.actions}>

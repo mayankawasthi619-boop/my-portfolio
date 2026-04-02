@@ -23,10 +23,10 @@ const About = () => {
               skills to every project.
             </p>
             <p style={styles.text}>
-              With experience in full-stack development, I specialize in building robust 
-              backends with Java and Spring Boot, and creating dynamic frontends with modern 
-              JavaScript frameworks. I've also contributed to academic research with a 
-              publication on Cloud Computing environments.
+              I specialize in building robust backends with Java/Spring Boot and creating dynamic frontends, 
+              coupled with deep expertise in Data Analytics and Machine Learning using Python, SQL, and Power BI. 
+              I transform complex datasets into actionable business strategies and have also contributed to 
+              academic research with a publication on Cloud Computing environments.
             </p>
             <ul style={styles.traits}>
               <li>⚡ Fast Learner</li>
@@ -45,7 +45,7 @@ const About = () => {
           >
             <div style={styles.imagePlaceholder}>
               <div style={styles.imageInner}>
-                <img src={profileImg} alt="Mayank Awasthi" style={styles.profileImage} />
+                <img src={profileImg} alt="Mayank Awasthi" style={styles.profileImage} className="float-animation" />
               </div>
             </div>
           </motion.div>

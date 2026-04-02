@@ -5,28 +5,54 @@ import { ExternalLink, Github } from 'lucide-react';
 const projectsData = [
   {
     title: 'E-Commerce Shopping Cart System',
-    description: 'A robust full-stack e-commerce platform featuring dynamic cart management, secure checkout, and comprehensive admin dashboard. Designed with microservices-ready architecture.',
-    tech: ['Spring Boot 3', 'Spring Security', 'Thymeleaf', 'MySQL', 'JavaMailSender'],
+    description: 'A robust full-stack e-commerce platform featuring dynamic cart management, secure checkout, and Admin Dashboard. Achieved sub-200ms API response via optimized JPA/Hibernate queries.',
+    tech: ['Java 17', 'Spring Boot 3', 'Spring Security', 'JWT', 'MySQL', 'Docker'],
     features: [
       'Role-based access control (Admin/User)',
-      'BCrypt password encryption',
-      'Automated email notifications',
-      'CRUD for products and categories'
+      'Stateless auth with JWT & BCrypt',
+      'Token-based Forgot Password workflow',
+      'Full CRUD for inventory and orders'
     ],
-    github: '#',
+    github: 'https://github.com/mayankawasthi619',
     demo: '#'
   },
   {
-    title: 'Clinical Trial Management System',
-    description: 'Web-based system designed to streamline clinical trial applications, approvals, and workflow management. Provides secure role-based portals for Admins, Investigators, and Laboratories.',
-    tech: ['PHP 5.3', 'MySQL 5.5', 'HTML/CSS', 'JavaScript'],
+    title: 'End-to-End E-Commerce Sales Analysis',
+    description: 'Developed an automated data cleaning pipeline and calculated Month-over-Month growth and repeat-buyer cohort analysis using advanced SQL. Delivered an interactive Power BI dashboard tracking KPIs.',
+    tech: ['Python', 'PostgreSQL', 'Pandas', 'Power BI', 'Seaborn'],
     features: [
-      'Centralized data management',
-      'Investigator trial tracking',
-      'Laboratory results uploading',
-      'Admin approval workflows'
+      'Data cleaning (10,000+ rows)',
+      'SQL Window Functions & CTEs',
+      'Exploratory Data Analysis (EDA)',
+      'Actionable pricing strategy reports'
     ],
-    github: '#',
+    github: 'https://github.com/mayankawasthi619-boop/End-to-End-Ecommerce-Analysis',
+    demo: '#'
+  },
+  {
+    title: 'Hospital Management System',
+    description: 'End-to-end healthcare application with patient registration, ward allocation, and automated billing. Containerized the full stack with Docker Compose eliminating environment bugs.',
+    tech: ['Java 17', 'Spring Boot 3', 'React.js', 'Vite', 'Docker Compose'],
+    features: [
+      'Responsive React.js UI with Router',
+      'Exposed RESTful APIs tested via Postman',
+      'Containerized deployments',
+      'Secure login and roles'
+    ],
+    github: 'https://github.com/mayankawasthi619',
+    demo: '#'
+  },
+  {
+    title: 'Customer Segmentation using RFM Analysis',
+    description: 'Built a rule-based RFM scoring model and implemented unsupervised Machine Learning via Scikit-Learn K-Means algorithm to discover hidden behavioural shopping personas across 500k+ records.',
+    tech: ['Python', 'Scikit-Learn', 'NumPy', 'Plotly', 'Matplotlib'],
+    features: [
+      'Unsupervised ML (K-Means Clustering)',
+      'RFM Modeling & Scoring',
+      'Handled missing data & outliers',
+      'Interactive 3D Scatter plots'
+    ],
+    github: 'https://github.com/mayankawasthi619-boop/customer-segmentation-rfm',
     demo: '#'
   }
 ];

@@ -210,3 +210,29 @@ input:focus, textarea:focus {
   .section-title { font-size: 2rem; }
   .container { padding: 0 1.5rem; }
 }
+
+/* Dynamic Additions */
+.text-gradient {
+  background: linear-gradient(90deg, var(--accent-color), #b100e8, var(--accent-color));
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
