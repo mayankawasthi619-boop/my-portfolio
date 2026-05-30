@@ -4,10 +4,10 @@ import { GraduationCap, Award } from 'lucide-react';
 
 const educationData = [
   {
-    period: 'Aug 2025 – Present',
+    period: '2025 – 2026',
     degree: 'PG-DAC',
     institution: 'CDAC, Noida',
-    score: 'In Progress'
+    score: '70.50%'
   },
   {
     period: '2018 – 2020',
