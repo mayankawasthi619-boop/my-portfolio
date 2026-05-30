@@ -6,12 +6,12 @@ const skillsData = [
   {
     category: 'Programming & DB',
     icon: <Code size={30} color="var(--accent-color)" />,
-    skills: ['Java 17', 'Python', 'SQL / PostgreSQL', 'JavaScript', 'PHP', 'C++']
+    skills: ['Java 17', 'Python', 'SQL / PostgreSQL', 'SQLite', 'JavaScript', 'PHP', 'C++']
   },
   {
     category: 'Web Dev & Frameworks',
     icon: <Server size={30} color="var(--accent-color)" />,
-    skills: ['Spring Boot 3', 'Spring Security', 'Hibernate', 'React.js', 'REST APIs', 'Microservices', 'Bootstrap 5']
+    skills: ['Spring Boot 3', 'Node.js / Express.js', 'React.js', 'Spring Security', 'Hibernate', 'REST APIs', 'Microservices', 'Bootstrap 5']
   },
   {
     category: 'Data & Machine Learning',

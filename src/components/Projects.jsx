@@ -4,6 +4,19 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projectsData = [
   {
+    title: 'FactoryAI: AI-Powered Worker Productivity Dashboard (2026)',
+    description: 'A production-style full-stack telemetry ingestion and analysis platform processing real-time worker activity and workstation utilization from AI-powered shop floor cameras.',
+    tech: ['Node.js', 'Express.js', 'SQLite', 'Vanilla JS (ES6+)', 'Docker', 'Custom SVG Charts'],
+    features: [
+      'Telemetry Ingestion API for real-time cameras',
+      'Zero-dependency custom SVG donut & bar charts',
+      'Idempotent ingestion (INSERT OR IGNORE deduplication)',
+      'Kafka / TimescaleDB scalability architecture plan'
+    ],
+    github: 'https://github.com/mayankawasthi619-boop/ai-powered-worker-productivity-dashboard',
+    demo: '#'
+  },
+  {
     title: 'E-Commerce Shopping Cart System',
     description: 'A robust full-stack e-commerce platform featuring dynamic cart management, secure checkout, and Admin Dashboard. Achieved sub-200ms API response via optimized JPA/Hibernate queries.',
     tech: ['Java 17', 'Spring Boot 3', 'Spring Security', 'JWT', 'MySQL', 'Docker'],
