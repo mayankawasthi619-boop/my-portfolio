@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Sparkles, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -12,21 +12,31 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           style={styles.content}
         >
+          <div style={styles.badgeWrapper}>
+            <span style={styles.badge}>
+              <Sparkles size={14} color="var(--accent-color)" /> Java 21 • Spring AI • GenAI Platforms
+            </span>
+          </div>
+
           <p style={styles.greeting}>Hi, I am</p>
           <h1 style={styles.name} className="text-gradient">Mayank Awasthi</h1>
-          <h2 style={styles.title}>Full-Stack Developer | Data & Business Analyst</h2>
+          <h2 style={styles.title}>Full-Stack AI & Backend Engineer | Java / Spring Boot & GenAI</h2>
           
           <p style={styles.tagline}>
-            Engineering robust scalable web applications and delivering data-driven business insights 
-            through advanced analytics, machine learning, and comprehensive dashboards.
+            Engineering production-grade AI platforms, intelligent document processing systems, and 
+            high-throughput Spring Boot backends. Specializing in <strong>Spring AI</strong>, <strong>RAG with pgvector</strong>, 
+            <strong>local LLM routing (Ollama)</strong>, and autonomous multi-agent architectures.
           </p>
           
           <div style={styles.actions}>
-            <a href="#contact" className="btn btn-primary">Let's Talk</a>
+            <a href="#projects" className="btn btn-primary" style={styles.primaryBtn}>
+              Explore Projects <ArrowRight size={18} />
+            </a>
+            <a href="#contact" className="btn btn-secondary">Let's Talk</a>
             <div style={styles.socials}>
-              <a href="https://github.com/mayankawasthi619-boop" target="_blank" rel="noopener noreferrer"><Github size={24} /></a>
-              <a href="https://linkedin.com/in/mayank-awasthi-1a1771167" target="_blank" rel="noopener noreferrer"><Linkedin size={24} /></a>
-              <a href="mailto:mayankawasthi619@gmail.com"><Mail size={24} /></a>
+              <a href="https://github.com/mayankawasthi619-boop" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><Github size={24} /></a>
+              <a href="https://linkedin.com/in/mayank-awasthi-1a1771167" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Linkedin size={24} /></a>
+              <a href="mailto:mayankawasthi619@gmail.com" aria-label="Email"><Mail size={24} /></a>
             </div>
           </div>
         </motion.div>
@@ -42,7 +52,7 @@ const styles = {
     alignItems: 'center',
     position: 'relative',
     overflow: 'hidden',
-    paddingTop: '100px',
+    paddingTop: '110px',
   },
   container: {
     display: 'flex',
@@ -50,46 +60,70 @@ const styles = {
     justifyContent: 'center',
   },
   content: {
-    maxWidth: '800px',
+    maxWidth: '850px',
+  },
+  badgeWrapper: {
+    marginBottom: '1.25rem',
+  },
+  badge: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    padding: '0.4rem 1rem',
+    backgroundColor: 'var(--accent-transparent)',
+    border: '1px solid var(--accent-glow)',
+    borderRadius: '30px',
+    color: 'var(--accent-color)',
+    fontFamily: 'var(--font-mono)',
+    fontSize: '0.85rem',
+    fontWeight: 'bold',
+    letterSpacing: '0.5px',
   },
   greeting: {
     color: 'var(--accent-color)',
     fontFamily: 'var(--font-heading)',
     fontSize: '1.2rem',
-    marginBottom: '1rem',
+    marginBottom: '0.75rem',
     fontWeight: 'bold',
     letterSpacing: '2px',
   },
   name: {
-    fontSize: '5vw',
-    minFontSize: '3rem',
+    fontSize: 'clamp(2.8rem, 6vw, 4.5rem)',
     margin: 0,
     lineHeight: 1.1,
     letterSpacing: '-1px',
     color: '#fff',
   },
   title: {
-    fontSize: '2vw',
-    minFontSize: '1.5rem',
+    fontSize: 'clamp(1.2rem, 2.5vw, 1.8rem)',
     color: 'var(--text-secondary)',
-    marginTop: '0.5rem',
+    marginTop: '0.75rem',
     marginBottom: '1.5rem',
+    fontWeight: '500',
   },
   tagline: {
-    fontSize: '1.1rem',
+    fontSize: '1.05rem',
     color: 'var(--text-primary)',
-    maxWidth: '600px',
-    marginBottom: '3rem',
+    maxWidth: '720px',
+    lineHeight: 1.7,
+    marginBottom: '2.5rem',
   },
   actions: {
     display: 'flex',
     alignItems: 'center',
-    gap: '2rem',
+    gap: '1.5rem',
     flexWrap: 'wrap',
+  },
+  primaryBtn: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.5rem',
   },
   socials: {
     display: 'flex',
     gap: '1.5rem',
+    alignItems: 'center',
+    marginLeft: '0.5rem',
   }
 };
 

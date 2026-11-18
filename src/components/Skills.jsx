@@ -1,27 +1,71 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Database, Server, Settings } from 'lucide-react';
+import { Bot, Server, Code, Database } from 'lucide-react';
 
 const skillsData = [
   {
-    category: 'Programming & DB',
-    icon: <Code size={30} color="var(--accent-color)" />,
-    skills: ['Java 17', 'Python', 'SQL / PostgreSQL', 'SQLite', 'JavaScript', 'PHP', 'C++']
+    category: 'AI & GenAI Architecture',
+    icon: <Bot size={28} color="var(--accent-color)" />,
+    skills: [
+      'Spring AI',
+      'RAG Architectures',
+      'pgvector (Vector DB)',
+      'Ollama / Local LLMs',
+      'Multi-Step Autonomous Agents',
+      'Context Pruning & SSE Streaming',
+      'Prompt Engineering',
+      'LangChain / LLM APIs',
+      'Scikit-Learn',
+      'Pandas / NumPy'
+    ]
   },
   {
-    category: 'Web Dev & Frameworks',
-    icon: <Server size={30} color="var(--accent-color)" />,
-    skills: ['Spring Boot 3', 'Node.js / Express.js', 'React.js', 'Spring Security', 'Hibernate', 'REST APIs', 'Microservices', 'Bootstrap 5']
+    category: 'Backend & Java Ecosystem',
+    icon: <Server size={28} color="var(--accent-color)" />,
+    skills: [
+      'Java 21 LTS / 17',
+      'Spring Boot 3.4+',
+      'Spring Security',
+      'JWT & RBAC Auth',
+      'RESTful APIs',
+      'Microservices',
+      'Hibernate / JPA',
+      'Apache PDFBox',
+      'Redis Caching',
+      'Node.js / Express'
+    ]
   },
   {
-    category: 'Data & Machine Learning',
-    icon: <Database size={30} color="var(--accent-color)" />,
-    skills: ['Pandas', 'NumPy', 'Scikit-Learn', 'Matplotlib/Seaborn', 'Plotly', 'K-Means', 'EDA']
+    category: 'Frontend & UI Engineering',
+    icon: <Code size={28} color="var(--accent-color)" />,
+    skills: [
+      'React 18 / 19',
+      'TypeScript',
+      'JavaScript (ES6+)',
+      'Tailwind CSS',
+      'Vite',
+      'Glassmorphic UI / CSS3',
+      'Framer Motion',
+      'Lucide React',
+      'Responsive Web Design',
+      'State Management'
+    ]
   },
   {
-    category: 'Tools & DevOps',
-    icon: <Settings size={30} color="var(--accent-color)" />,
-    skills: ['Power BI', 'Tableau', 'Docker', 'Kubernetes', 'Git/GitHub', 'Jupyter', 'Agile/Scrum']
+    category: 'Databases, Cloud & DevOps',
+    icon: <Database size={28} color="var(--accent-color)" />,
+    skills: [
+      'PostgreSQL',
+      'MySQL',
+      'SQLite',
+      'Docker & Docker Compose',
+      'Render Blueprint (render.yaml)',
+      'GitHub Actions CI/CD',
+      'Git / GitHub',
+      'Linux / Bash',
+      'Power BI',
+      'Agile / Scrum'
+    ]
   }
 ];
 
@@ -40,6 +84,7 @@ const Skills = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="tech-card"
+              style={styles.card}
             >
               <div style={styles.iconContainer}>
                 {category.icon}
@@ -63,6 +108,10 @@ const styles = {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
     gap: '2rem',
+  },
+  card: {
+    display: 'flex',
+    flexDirection: 'column',
   },
   iconContainer: {
     display: 'flex',

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import profileImg from '../assets/Profile.webp';
+import profileImg from '../assets/Profile.jpg';
 
 const About = () => {
   return (
@@ -17,22 +17,19 @@ const About = () => {
             style={styles.content}
           >
             <p style={styles.text}>
-              I'm a CS Engineering graduate with a strong foundation in software development, 
-              currently pursuing a PG-DAC at CDAC, Noida. I hold both M.Tech and B.Tech 
-              degrees in Computer Science, bringing academic rigor and practical engineering 
-              skills to every project.
+              I'm a Computer Science Engineer holding both <strong>M.Tech</strong> and <strong>B.Tech</strong> degrees in Computer Science, currently completing <strong>PG-DAC at CDAC, Noida</strong>. I combine deep computer science fundamentals and academic rigor with hands-on software craftsmanship.
             </p>
             <p style={styles.text}>
-              I specialize in building robust backends with Java/Spring Boot and creating dynamic frontends, 
-              coupled with deep expertise in Data Analytics and Machine Learning using Python, SQL, and Power BI. 
-              I transform complex datasets into actionable business strategies and have also contributed to 
-              academic research with a publication on Cloud Computing environments.
+              I specialize in architecting modern <strong>AI Platforms</strong> and enterprise-grade backends using <strong>Java 21, Spring Boot 3.4+, and Spring AI</strong>. My recent work focuses on <strong>Retrieval-Augmented Generation (RAG)</strong> with PostgreSQL and pgvector, dynamic model routing (local Ollama & cloud LLMs), sandboxed container execution, and <strong>real-time document parsing heuristics</strong> using Apache PDFBox.
+            </p>
+            <p style={styles.text}>
+              Whether engineering autonomous multi-step agentic workflows, building low-latency REST APIs, or crafting sleek React/TypeScript interfaces, I build production-ready systems designed for privacy, performance, and scale.
             </p>
             <ul style={styles.traits}>
-              <li>⚡ Fast Learner</li>
-              <li>🔍 Detail Oriented</li>
-              <li>🤝 Team Player</li>
-              <li>🚀 Problem Solver</li>
+              <li>🤖 GenAI & Spring AI</li>
+              <li>☕ Java 21 & Spring Boot</li>
+              <li>🧠 RAG & pgvector Vector DB</li>
+              <li>🚀 Full-Stack AI Architecture</li>
             </ul>
           </motion.div>
           
@@ -70,18 +67,19 @@ const styles = {
   },
   text: {
     marginBottom: '1.5rem',
-    fontSize: '1.1rem',
+    fontSize: '1.05rem',
     lineHeight: 1.8,
   },
   traits: {
     listStyle: 'none',
     padding: 0,
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
     gap: '1rem',
     marginTop: '2rem',
     fontFamily: 'var(--font-heading)',
     color: 'var(--accent-color)',
+    fontWeight: '600',
   },
   imageContainer: {
     position: 'relative',
@@ -89,27 +87,25 @@ const styles = {
     justifyContent: 'center',
   },
   imagePlaceholder: {
-    width: '300px',
+    width: '320px',
     height: '400px',
     border: '2px solid var(--accent-color)',
-    borderRadius: '12px',
+    borderRadius: '16px',
     position: 'relative',
     zIndex: 1,
-    boxShadow: '0 0 20px var(--accent-transparent)',
+    boxShadow: '0 0 25px var(--accent-transparent)',
     transition: 'transform 0.3s ease',
   },
   imageInner: {
     width: '100%',
     height: '100%',
     backgroundColor: 'var(--bg-card)',
-    borderRadius: '10px',
+    borderRadius: '14px',
+    overflow: 'hidden',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontFamily: 'var(--font-heading)',
-    color: 'var(--text-secondary)',
-    fontSize: '1.5rem',
-    transform: 'translate(-15px, -15px)',
+    transform: 'translate(-12px, -12px)',
     border: '1px solid var(--border-color)',
     transition: 'transform 0.3s ease',
   },
@@ -117,7 +113,8 @@ const styles = {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
-    borderRadius: '10px',
+    objectPosition: 'center top',
+    borderRadius: '14px',
   }
 };
 
